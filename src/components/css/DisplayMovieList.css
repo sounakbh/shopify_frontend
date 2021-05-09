@@ -1,0 +1,36 @@
+.movieTab {
+  /* border: 2px solid red; */
+  width: 350px;
+  height: 620px;
+  text-align: center;
+  /* padding-left: 100px; */
+  margin-right: 20px;
+}
+
+.row {
+  text-align: center;
+}
+
+.movieTab .title {
+  height: 60px;
+  font-size: 18px;
+  border-radius: 5%;
+  margin-bottom: 5px;
+  color: #bdc4a7;
+  /* background-color: #bdc4a7; */
+  text-align: center;
+  border: 2px solid #bdc4a7;
+}
+
+.poster {
+  width: 350px;
+  height: 500px;
+}
+
+.add-button {
+  text-decoration: none;
+  border-radius: 5%;
+  margin-top: 5px;
+  /* background-color: #bdc4a7; */
+  color: #bdc4a7;
+}
