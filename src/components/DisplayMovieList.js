@@ -6,8 +6,8 @@ class DisplayMovieList extends Component {
     const FavouriteComponent = this.props.favouriteComponent;
     return (
       <>
-        {this.props.movies.map((movie) => (
-          <div className="movieTab">
+        {this.props.movies.map((movie, key) => (
+          <div key={key.toString()} className="movieTab">
             <div className="row">
               <div className="title">{movie["Title"]}</div>
             </div>
