@@ -41,9 +41,12 @@ class App extends Component {
 
   addNominatedMovie = (movie) => {
     // retrieve from local storage
-    const movieFavourites = JSON.parse(
-      localStorage.getItem("react-movie-app-favourites")
-    );
+    // const movieFavourites = JSON.parse(
+    //   localStorage.getItem("react-movie-app-favourites")
+    // );
+
+    // to enable local storage functionality commet line 49, and uncomment line 44-46
+    const movieFavourites = this.state.favourites;
 
     var title = movie.Title;
     // check for duplicate nomination
