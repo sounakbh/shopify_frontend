@@ -45,14 +45,16 @@ class App extends Component {
     //   localStorage.getItem("react-movie-app-favourites")
     // );
 
-    // to enable local storage functionality commet line 49, and uncomment line 44-46
-    const movieFavourites = this.state.favourites;
+    // to enable local storage functionality comment out line 49, and uncomment line 40-46
+    var movieFavourites = this.state.favourites;
 
     var title = movie.Title;
     // check for duplicate nomination
-    var duplicateMovieSearch = movieFavourites.filter((obj) => {
-      return obj.imdbID === movie.imdbID;
-    });
+    if (movieFavourites) {
+      var duplicateMovieSearch = movieFavourites.filter((obj) => {
+        return obj.imdbID === movie.imdbID;
+      });
+    }
 
     if (Object.keys(duplicateMovieSearch).length === 0) {
       var favouriteMovies;
